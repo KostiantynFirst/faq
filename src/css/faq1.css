@@ -1,16 +1,17 @@
 .faq-container {
-    display: block;
-    max-width: 320px;
-    margin: 0 auto;
-    padding: 0;
-  }
+  display: flex;
+  padding-left: 32px;
+  padding-right: 32px;
+  max-width: 1216px;
+  margin: 0 auto;
+}
 
-  .faq {
+.faq {
   background: #fff;
 }
 
 .faq-image-bg {
-  display: none;
+  margin-top: 240px;
 }
 
 .header-container {
@@ -25,15 +26,13 @@
 }
 
 
+
 .title-faq {
   font-family: "Impact", sans-serif;
   font-weight: 400;
-
-  font-size: 52px;
-  line-height: 123%;
-  letter-spacing: 0.03em;
-
-
+  font-size: 108px;
+  line-height: 115%;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #292929;
   text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
@@ -44,11 +43,10 @@
 }
 
 .faq-item {
-  position: relative;
+  /* position: relative; */
   padding: 28px 24px;
-
-  max-width: 224px;
-
+  max-width: 592px;
+  padding: 28px 24px;
   border-bottom: 1px solid #ccc;
 }
 
@@ -56,22 +54,15 @@
   margin-bottom: 0;
 }
 
-
-
 .title-item-list-header {
  font-weight: 400;
-
-
- max-width: 224px;
-
- font-size: 18px;
- line-height: 156%;
-
+ font-size: 20px;
+ line-height: 160%;
  letter-spacing: 0.03em;
  text-transform: uppercase;
 }
 
-
+/* __________ */
 
 
 .text-item-list {
@@ -113,8 +104,6 @@
 
   width: 32px;
   height: 32px;
-
-  margin-left: 16px;
 }
 
 .icon-answear {
@@ -172,50 +161,65 @@
   z-index: 1; 
 }
 
-@media screen and (min-width: 767px ) {
- .faq-container {
+
+
+@media screen and (max-width: 767px) {
+
+
+.faq-container {
+    display: block;
     max-width: 704px;
     margin: 0 auto;
     padding: 0;
   }
 
-  .faq-item {
-    max-width: 592px;
-  }
-
-  .title-faq {
-    font-size: 108px;
-    line-height: 115%;
-    letter-spacing: 0.02em;
-  }
-
-  .item-header-container {
-    width: 656px;
-}
-
-  .title-item-list-header {
-    max-width: 600px;
-    font-size: 20px;
-    line-height: 160%;
-  }
-
 .header-container {
     margin-bottom: 60px;
   }
+
+.faq-image-bg {
+  display: none;
 }
 
-@media screen and (min-width: 1279px) {
+}
 
-    .faq-container {
-        display: flex;
-        padding-left: 32px;
-        padding-right: 32px;
-        max-width: 1216px;
-        margin: 0 auto;
-    }
-    
-    .faq-image-bg {
-        margin-top: 240px;
-        display: block;
-    }
+
+@media screen and (max-width: 340px) {
+
+
+.faq-container {@
+    display: block;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+.header-container {
+    margin-bottom: 40px;
+  }
+
+.faq-image-bg {
+  display: none;
+}
+
+.faq-item {
+  max-width: 272px;
+}
+
+.item-header-container {
+  max-width: 224px;
+}
+
+.title-faq {
+  font-size: 52px;
+  line-height: 123%;
+  letter-spacing: 0.03em;
+}
+
+.title-item-list-header {
+  font-size: 18px;
+  line-height: 156%;
+}
+
+
 }
