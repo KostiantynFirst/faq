@@ -1,7 +1,9 @@
 .faq-container {
   display: flex;
-  padding: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
   max-width: 1216px;
+  margin: 0 auto;
 }
 
 .faq {
