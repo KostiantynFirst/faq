@@ -1,17 +1,3 @@
-// import Accordion from 'accordion-js';
-
-// new Accordion('.faq-list', {
-//   duration: 400,
-//   showOne: true,
-//   showMultiple: true,
-//   onToggle: function (event) {
-//     const button = event.target.closest('.questions');
-//     if (button) {
-//       button.classList.toggle('is-active');
-//     }
-//   },
-// });
-
 
   import Accordion from 'accordion-js';
 
@@ -20,16 +6,16 @@
 
   new Accordion(faqList, {
     duration: 400,
-    showOne: true, // Adjust to control behavior (single or multiple open)
-    showMultiple: false, // Adjust to control behavior (single or multiple open)
+    showOne: true, 
+    showMultiple: false, 
     onToggle: function (event) {
       const clickedButton = event.target.closest('.questions');
-      const clickedItem = clickedButton.parentNode; // Get the clicked LI element
+      const clickedItem = clickedButton.parentNode; 
 
-      faqItems.forEach(item => item.classList.remove('is-active')); // Remove is-active from all items
-      clickedItem.classList.toggle('is-active'); // Toggle is-active on the clicked item
+      faqItems.forEach(item => item.classList.remove('is-active')); 
+      clickedItem.classList.toggle('is-active'); 
 
-      // Handle border-bottom for the previous item efficiently:
+
       const previousItem = clickedItem.previousElementSibling;
       if (previousItem) {
         console.log(previousItem);
